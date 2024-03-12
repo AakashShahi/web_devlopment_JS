@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>
+        <center>This is form learning </center>
+    </h2>
+    <form action="backend.js">
+        <label for="name"> Name:</label>
+        <div>
+            <input type="text" name="getName" id="name">
+        </div>
+
+        <div>
+            Email: <input type="email" name="getEmail">
+        </div>
+
+        <div>
+            Password: <input type="password" name="getPass">
+        </div>
+
+        <div>
+            Date:<input type="date" name="getDate">
+        </div>
+
+        <div>
+            Number: <input type="number" name="myNumber" id="">
+        </div>
+
+        <div>
+            Are you 11+?:Yes<input type="radio" name="myEligibile" id=""> No<input type="radio" name="myEligibile">
+        </div>
+
+        <div>
+            Are you male?: <input type="checkbox" name="myCheck" id="" checked>
+        </div>
+
+        <div>
+            Write about yourself: <textarea name="text" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <label for="car">Car: </label>
+            <select name="getCar" id="car">
+                <option value="bmw">BMW</option>
+                <option value="frr" selected>Ferrari</option>
+            </select>
+        </div>
+
+
+        <br>
+        <div>
+            <input type="submit" name="submitNow">
+            <input type="reset" name="refresh">
+        </div>
+    </form>
+</body>
+
+</html>
