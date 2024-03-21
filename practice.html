@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        h3,
+        h4 {
+            text-align: center;
+            font-size: 30px;
+            margin: 0%;
+        }
+
+        body {
+            font-family: "Ubuntu", sans-serif;
+            background-image: url(https://source.unsplash.com/user/erondu/1920x1080);
+            background-repeat: no-repeat;
+
+        }
+
+        .container {
+            border: 4px solid black;
+            border-radius: 11px;
+            height: auto;
+            width: 50%;
+            float: right;
+            margin-top: 100px;
+
+        }
+
+        .inputForm {
+            margin: 5px 4px;
+        }
+
+        .boxSize {
+            width: 50%;
+            height: 20px;
+            background-color: transparent;
+            border: 3px solid black;
+            border-radius: 11px;
+        }
+
+        .button {
+            width: 200px;
+            height: 30px;
+            background-color: black;
+            font-size: 21px;
+            color: white;
+            margin: 5px 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>
+        Welcome To Login Page
+    </h3>
+
+    <div class="container">
+
+        <div>
+            <h4>Login Form</h4>
+        </div>
+
+        <form action="backend.js">
+
+            <label for="email"><strong>Email:</strong></label>
+            <div class="inputForm">
+                <input type="email" name="getEmail" class="boxSize" id="email">
+            </div>
+
+            <label for="username"><strong>Username:</strong></label>
+            <div class="inputForm">
+                <input type="text" name="getUsername" class="boxSize" id="username">
+            </div>
+
+            <label for="password"><strong>Password:</strong></label>
+            <div class="inputForm">
+                <input type="password" name="getPass" class="boxSize" id="password">
+            </div>
+
+            <div>
+                <input type="submit" name="eventSubmit" class="button" value="Login">
+            </div>
+
+        </form>
+    </div>
+    
+</body>
+
+</html>
