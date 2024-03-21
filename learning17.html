@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            background-color: aquamarine;
+            border: 4px solid rgb(19, 85, 63);
+
+            /* we can do padding/margin and margin top left reight bottom */
+            /* padding-left:72px ;
+            padding-right:72px ;
+            padding-bottom:72px ;
+            padding-top:72px ;*/
+            margin: 10px 20px; 
+
+            /* padding/margin all area in same line */
+            /*padding: top right bottom left*/
+            /* padding: 72px 20px 40px 30px; */
+
+            /* padding/margin in y and x axis */
+            padding: 100px 100px;
+            /* padding/margin: yaxis xaxis */
+            border-radius: 11px;
+            width: 500px;
+            
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum iusto, ad reprehenderit beatae
+            provident
+            aliquid enim sapiente odit ullam cum fugiat molestiae ducimus?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum iusto, ad reprehenderit beatae
+            provident
+            aliquid enim sapiente odit ullam cum fugiat molestiae ducimus?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum iusto, ad reprehenderit beatae
+            provident
+            aliquid enim sapiente odit ullam cum fugiat molestiae ducimus?</p>
+    </div>
+
+</body>
+
+</html>
