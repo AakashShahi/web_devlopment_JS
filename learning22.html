@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .container{
+            border: 3px solid black;
+            height: 1000px;
+        }
+        /* Css position: fixed, sticky, static(default), relative, absolute */
+        .box{
+            border: 2px solid red;
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+        }
+
+        #box3{
+            /* position: relative;*/
+
+            /* position: absolute; */
+
+            /* position: fixed;
+            right: 4px;
+            bottom: 2px; */
+
+            position: sticky;
+            top:0%;
+
+            /* top: 30px;
+            left:30px; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
