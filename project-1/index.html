@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24/7 SuperMarket</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url("images/superlogo.jpeg");
+        font-family: "Chelsea Market", system-ui;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 0px;
+        top: 4px;
+        display: inline-block;
+        width: 30%;
+        box-sizing: border-box;
+
+    }
+
+    .right {
+        /* border: 2px solid blue; */
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .center {
+        /* border: 2px solid green; */
+        margin: 4px auto;
+        width: 10%;
+        display: block;
+        text-align: center;
+
+    }
+
+    .logo {
+        height: 70px;
+        width: 80px;
+        mix-blend-mode: multiply;
+    }
+
+    .left li {
+        display: inline-block;
+    }
+
+    .left a {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 10px;
+
+    }
+
+    .left ul {
+        background: rgba(255, 255, 255, 0.563);
+        margin-left: 0%;
+        padding: 0%;
+    }
+
+    .left li a:hover,
+    .left li a.active {
+        text-decoration: underline;
+        color: rgb(150, 189, 53);
+
+
+    }
+
+    .left ul:hover {
+        background: white;
+    }
+
+    .prof {
+        height: 30px;
+        width: 40px;
+        mix-blend-mode: color-burn;
+    }
+
+    .prof:hover {
+        mix-blend-mode: color;
+    }
+
+    .center a {
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        font-weight: bold;
+        font-style: italic;
+
+    }
+
+    .center a:hover {
+        color: rgb(150, 189, 53);
+
+    }
+
+    .log-container {
+        margin-top: 50px;
+        height: 300px;
+        width: 300px;
+        border: 2px solid red;
+        position: absolute;
+        right: 140px;
+        background: rgba(255, 255, 255, 0.563);
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .log-container input{
+        display: block;
+        width: 280px;
+    }
+</style>
+
+<body>
+
+    <header class="header">
+        <div class="left">
+            <!-- left box for nav bar -->
+            <ul>
+                <li>
+                    <a href="" class="active">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="right">
+            <!-- right box for buttons -->
+            <a href=""><img src="images/profile.png" alt="" class="prof"></a>
+
+        </div>
+
+        <div class="center">
+            <!-- center for logo -->
+            <img class="logo" src="images/super.jpeg" alt="Error loading image">
+            <a href="">24/7 SuperMarket</a>
+        </div>
+    </header>
+
+    <body>
+        <div class="log-container">
+            <form action="base.jss">
+                <label style="text-decoration: underline; display:block;">Sign Up</label>
+
+                <label for="">Username</label>
+                <input type="text" name="getEmail" id="">
+
+                <label for="">Email</label>
+                <input type="email" name="getEmail" id="">
+
+                <label for="">Address</label>
+                <input type="text" name="getAdd" id="">
+
+                <label for="">Genger</label>
+                <select name="getGender" id="">
+                    <option value="Male">Male</option>
+                    <option value="Fe-Male" selected>Fe-Male</option>
+                </select>
+
+                <label for="">Password</label>
+                <input type="password" name="getPass" id="">
+
+
+            </form>
+        </div>
+    </body>
+
+</body>
+
+</html>
