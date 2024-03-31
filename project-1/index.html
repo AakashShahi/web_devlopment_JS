@@ -110,18 +110,35 @@
         margin-top: 50px;
         height: 300px;
         width: 300px;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         position: absolute;
         right: 140px;
         background: rgba(255, 255, 255, 0.563);
         box-sizing: border-box;
         text-align: center;
+        
     }
 
     .log-container input{
         display: block;
-        width: 280px;
+        width: 288px;
+        background-color: transparent;
+        border: 2px solid rgba(0, 0, 0, 0.173);
     }
+
+    .log-container select{
+        display: block;
+        width: 297px;
+        background-color: transparent;
+        border: 2px solid rgba(0, 0, 0, 0.173);
+        
+        
+    }
+
+    
+    
+ 
+
 </style>
 
 <body>
@@ -169,12 +186,13 @@
             <img class="logo" src="images/super.jpeg" alt="Error loading image">
             <a href="">24/7 SuperMarket</a>
         </div>
+
     </header>
 
     <body>
         <div class="log-container">
             <form action="base.jss">
-                <label style="text-decoration: underline; display:block;">Sign Up</label>
+                <label style="text-decoration: underline; display:block; background-color: rgb(150, 189, 53); margin-bottom: 15px;">Sign Up</label>
 
                 <label for="">Username</label>
                 <input type="text" name="getEmail" id="">
@@ -186,13 +204,15 @@
                 <input type="text" name="getAdd" id="">
 
                 <label for="">Genger</label>
-                <select name="getGender" id="">
+                <select name="getGender" id="" >
                     <option value="Male">Male</option>
                     <option value="Fe-Male" selected>Fe-Male</option>
                 </select>
 
-                <label for="">Password</label>
+                <label for="" class="pass-label">Password</label>
                 <input type="password" name="getPass" id="">
+
+                <input type="Submit" value="Sign Up" name="" id="" style="background-color: black; color: white; width: 295px; margin-top: 15px; text-decoration: underline;">
 
 
             </form>
