@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    
 </head>
 
 <body>
     <h2>
         <center>This is form learning </center>
     </h2>
-    <form action="backend.js">
+    <form method="POST" accept="https://localhost:8080" >
         <label for="name"> Name:</label>
         <div>
             <input type="text" name="getName" id="name">
@@ -56,7 +57,7 @@
 
         <br>
         <div>
-            <input type="submit" name="submitNow">
+            <input type="submit" name="submitNow" >
             <input type="reset" name="refresh">
         </div>
     </form>
