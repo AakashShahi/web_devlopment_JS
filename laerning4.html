@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables and list</title>
+    <style>
+
+    </style>
 </head>
+
 
 <body>
     <ul>
@@ -46,30 +50,47 @@
 
     <!-- Tables -->
     <h3> Html Table </h3>
-    <table>
+    <table border="1">
         <thead>
             <tr>
                 <th>Name</th>
-                <th>Employeeid</th>
+                <th>Employe Id</th>
+                <th>Overall Data</th>
                 <th>Role</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Aaaush</td>
-                <td>12</td>
-                <td>janitor</td>
+                <td>Aayush</td>
+                <td rowspan="2">12</td>
+                <td rowspan="3">Data for all</td>
+                <td><a href="https://www.ziprecruiter.com/career/Janitorial-Cleaner/What-Is-How-to-Become">Janitor</a>
+                </td>
             </tr>
 
             <tr>
                 <td>Shubham</td>
-                <td>2</td>
-                <td>cleaner</td>
+                <!-- <td>2</td> -->
+
+                <td><a href="https://www.betterteam.com/cleaner-job-description">Cleaner</a></td>
             </tr>
+
+            <tr>
+                <td>Biswash</td>
+                <td>4</td>
+                <td><a
+                        href="https://www.nepal.ubuy.com/en/product/8QYJJLUSM-harpic-disinfectant-toilet-cleaner-liquid-original-500-ml-thick-toilet-cleaning-acid-suitable-for-toilet-bowls">Toilet
+                        Cleaner</a></td>
+            </tr>
+
+        <tfoot>
+            <td colspan="4">
+                <center><a href="http://merojob.com">My Site</a></center>
+            </td>
+        </tfoot>
 
         </tbody>
     </table>
-
 </body>
 
 </html>
