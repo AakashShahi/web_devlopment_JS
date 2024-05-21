@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrom Board</title>
+    <style>
+        .container {
+            position: relative;
+            background-color: rgb(89, 68, 9);
+            height: 400px;
+            width: 400px;
+        }
+
+        .hole {
+            position: absolute;
+            background-color: black;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+
+        .left_top {
+            top: 0;
+            left: 0;
+        }
+
+        .right_top {
+            top: 0;
+            right: 0;
+        }
+
+        .bottom_left {
+            bottom: 0;
+            left: 0;
+        }
+
+        .bottom_right {
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>Carrom Board</center>
+        <div class="hole left_top"></div>
+        <div class="hole right_top"></div>
+        <div class="hole bottom_left"></div>
+        <div class="hole bottom_right"></div>
+    </div>
+</body>
+</html>

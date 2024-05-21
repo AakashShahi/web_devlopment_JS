@@ -5,9 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css Learning</title>
+    <style>
+        .main {
+            background-color: yellow;
+        }
+
+        .main .left_container {
+            height: 600px;
+            width: 600px;
+            background-color: cadetblue;
+            display: inline-block;
+            float: left;
+            border: solid rebeccapurple 2px;
+
+        }
+
+        .main .right_container {
+            display: inline-block;
+            height: 600px;
+            width: 600px;
+            background-color: aquamarine;
+            float: right;
+            right: 10px;
+        }
+
+        .right_container .top_section {
+            background-color: beige;
+            width: fit-content;
+            height: fit-content;
+
+        }
+
+        .mid_right {
+            background-color: violet;
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            float: right;
+        }
+
+        .mid_left {
+            background-color: blue;
+            display: inline-block;
+            width: 300px;
+            float: left;
+            height: 300px;
+        }
+
+        .bottm_section {
+            background-color: chartreuse;
+            height: fit-content;
+            width: fit-content;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="main">
+
+        <div class="left_container">
+            <h1>Hello</h1>
+        </div>
+
+        <div class="right_container">
+            <div class="top_section">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat eveniet earum reiciendis voluptate
+                    quaerat distinctio soluta facere laboriosam officia quod numquam molestias recusandae harum,
+                    similique,
+                    repellendus vitae perspiciatis voluptatem! Cum odit dignissimos animi, ratione nostrum alias.
+                    Reprehenderit id culpa quae sit distinctio velit officia, facilis perferendis corrupti. Provident,
+                    autem
+                    sunt?</p>
+            </div>
+
+            <div class="mid_left">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, cupiditate!</p>
+            </div>
+
+            <div class="mid_right">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, incidunt?
+            </div>
+
+            <div class="bottm_section">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde accusantium qui delectus. Nam veniam,
+                    repellat ullam quas labore unde consequuntur debitis ratione. Excepturi, nesciunt? Optio autem harum
+                    consectetur. Vero quibusdam debitis consectetur cupiditate qui doloribus aspernatur odio,
+                    accusantium reiciendis, consequatur, commodi labore temporibus dolor! Eligendi repellat quas eaque,
+                    at non aliquam saepe nesciunt itaque eum qui eos deleniti soluta dignissimos amet dolore, illum
+                    voluptates laudantium dolor velit sed. Totam dicta porro magni quisquam minus odio repudiandae
+                    voluptatem sequi blanditiis recusandae quos vero, accusamus tempore at, temporibus a vitae ullam
+                    placeat iste voluptates! Dolore alias minima explicabo dolorem incidunt ipsam! Quod.</p>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
