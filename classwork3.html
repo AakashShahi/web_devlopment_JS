@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent{
+        height: 100px;
+        display: flex;
+        /* flex-direction: column; */
+        
+    }
+
+    /* .parent .child:nth-child(odd){
+        background-color: yellow;
+    }
+
+    .parent .child:nth-child(even){
+        background-color: rgb(255, 0, 0);
+    } */
+
+    .parent .child{
+        flex-shrink: 1;
+        height: 50px;
+        flex-basis: 200px;
+    }
+
+    .parent .child:first-child{
+        flex-shrink: 1;
+    }
+
+    .parent .child:last-child{
+        flex-shrink: 0;
+    }
+
+</style>
+
+<body>
+    <div class="parent">
+        <div class="child" style="background-color: aqua;">child1</div>
+        <div class="child" style="background-color: blue;">child2</div>
+        <!-- <div class="child">child3</div> -->
+        <!-- <div class="child">child4</div>
+        <div class="child">child5</div>
+        <div class="child">child6</div> -->
+    </div>
+</body>
+
+</html>

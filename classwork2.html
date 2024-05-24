@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <style>
+        .div{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            transition-property: width;
+            transition-delay: 0.5s;
+            transition-duration: 0.5s;
+            /* transform: rotate(70deg); */
+            animation-name:anmName ;
+            animation-delay: 1;
+            animation-duration: 2s;
+            animation-iteration-count: 3s;
+
+        }
+
+        @keyframes anmName {
+            25%{background-color:green}
+            50%{background-color: red}
+            100%{background-color:yellow}
+
+        }
+
+        .div:hover{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+
+
+    </div>
+</body>
+</html>
